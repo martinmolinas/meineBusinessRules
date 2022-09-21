@@ -9,7 +9,7 @@ var operation1 = function (manager,logger) {
         logger.info("Product not found");
     } else {
         var value = product.getValue(attribute.getID());
-        valu.setSimpleValue("100");
+        value.setSimpleValue("100");
     }
 }
 
