@@ -1,7 +1,7 @@
 // Defintion of Business Rule as function operation1
 var operation1 = function (manager,logger) {
     var product = manager.getProductHome().getProductByID("LTASalesItem_105130");
-    var attribut = manager.getAttributeHome().getAttributeByID("LTAConsumerShortDescription");
+    var attribute = manager.getAttributeHome().getAttributeByID("LTAConsumerShortDescription");
     if (attribute == null) {
         logger.info("Attribute not found");
     }
@@ -9,7 +9,7 @@ var operation1 = function (manager,logger) {
         logger.info("Product not found");
     } else {
         var value = product.getValue(attribute.getID());
-        value.setSimpleValue("100");
+        valu.setSimpleValue("100");
     }
 }
 
